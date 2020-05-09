@@ -1,3 +1,61 @@
-#root {
-  color: red;
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Open+Sans&display=swap");
+
+body {
+  margin: 0 auto;
+  background-color: peachpuff;
 }
+header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+
+@media (min-width: 876px) {
+  header {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: #444444;
+    color: white;
+    background-image: linear-gradient(#000, #444444);
+  }
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  column-gap: 20px;
+  row-gap: 30px;
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.searchShows{
+  background-color: lightyellow;
+  width: 300px;
+  height: 35px;
+  font-size: 1.125em;
+  margin: 10px;
+  padding: 5px;
+}
+
+.searchEpidose {
+  background-color: lightyellow;
+  width: 300px;
+  height: 35px;
+  font-size: 1.125em;
+  margin: 10px;
+  padding: 5px;
+}
+
+
+
+
+
+#root {
+    color: red;
+  }
+
